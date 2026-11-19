@@ -1,2 +1,2 @@
-# designsystem
-design system
+# designsystem-hkat
+design system practice from Figma to code
