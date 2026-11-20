@@ -1,0 +1,40 @@
+body {
+	font-family: "Noto sans", sans-serif;
+}
+
+div {
+	display: inline;
+
+}
+
+button {
+	font-size: 16px;
+	font-style:normal;
+	font-weight:600;
+	line-height: 20px;
+	display: inline-flex;
+	padding: 12px 24px;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	border-radius: 52px;
+	
+}
+
+.button-default {
+	background-color: #000;
+	color: #FFF;
+	border: 1px, #000, solid;
+}
+
+.button-hover {
+	background-color: #353535;
+	color: #FFF;
+	border: 1px, #353535, solid;
+}
+
+.button-disabled {
+	background-color: #F0F0F0;
+	color: #1B1B1B;
+	border: 1px, #B5B5B5, solid;
+}
