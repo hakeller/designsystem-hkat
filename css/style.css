@@ -3,7 +3,10 @@ body {
 }
 
 div {
-	display: inline;
+	display: inline-flex;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	gap: 24px;
 
 }
 
