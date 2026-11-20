@@ -3,7 +3,7 @@ body {
 }
 
 div {
-	display: inline-flex;
+	display: flex;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	gap: 24px;
