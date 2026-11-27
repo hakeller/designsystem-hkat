@@ -12,6 +12,7 @@ p {
 
 div {
 	display: flex;
+	margin-bottom: 80px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	gap: 24px;
@@ -58,6 +59,21 @@ button.default:hover {
 
 button.default:active {
 	background-color: #000;
+	color: #FFF;
+}
+
+button.primary {
+	background-color: #1E75B1;
+	color: #FFF;
+}
+
+button.primary:hover {
+	background-color: #185E8E;
+	color: #FFF;
+}
+
+button.primary:active {
+	background-color: #1E75B1;
 	color: #FFF;
 }
 
