@@ -29,11 +29,12 @@ button {
 	justify-content: center;
 	align-items: center;
 	gap: 12px;
-	border: none;
+	border: hidden;
 	border-radius: 52px;
 	cursor: pointer;
 	
 }
+
 
 button:focus-visible {
 	outline: 2px solid #1E75B1;
@@ -47,32 +48,65 @@ button:disabled {
 	cursor: not-allowed;
 }
 
-button.default {
+button.solid-default {
 	background-color: #000;
 	color: #FFF;
 }
 
-button.default:hover {
+button.solid-default:hover {
 	background-color: #353535;
 	color: #FFF;
 }
 
-button.default:active {
+button.solid-default:active {
 	background-color: #000;
 	color: #FFF;
 }
 
-button.primary {
+button.transparent-default {
+	background-color: transparent;
+	color: #1B1B1B;
+}
+
+button.transparent-default:hover {
+	background-color: #F0F0F0;
+	color: #1B1B1B;
+}
+
+button.transparent-default:active {
+	background-color: transparent;
+	color: #1B1B1B;
+}
+
+button.outline-default {
+	background-color: #FFF;
+	outline: 1px solid #000;
+	color: #000;
+}
+
+button.outline-default:hover {
+	background-color: #FFF;
+	outline: 2px solid #000;
+	color: #000;
+}
+
+button.outline-default:active {
+	background-color: #FFF;
+	outline: 1px solid #000;
+	color: #000;
+}
+
+button.primary-solid {
 	background-color: #1E75B1;
 	color: #FFF;
 }
 
-button.primary:hover {
+button.primary-solid:hover {
 	background-color: #185E8E;
 	color: #FFF;
 }
 
-button.primary:active {
+button.primary-solid:active {
 	background-color: #1E75B1;
 	color: #FFF;
 }
