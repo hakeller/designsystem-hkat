@@ -34,29 +34,31 @@ button {
 	
 }
 
-.button-disabled {
+button:focus-visible {
+	outline: 2px solid #1E75B1;
+	outline-offset: 2px;
+}	
+
+button:disabled {
 	background-color: #F0F0F0;
 	color: #6B6B6B;
 	border: solid, 1px, #B5B5B5;
 	cursor: not-allowed;
 }
 
-.default {
+button.default {
 	background-color: #000;
 	color: #FFF;
 }
 
-.default:hover {
+button.default:hover {
 	background-color: #353535;
 	color: #FFF;
 }
 
-.default:active {
+button.default:active {
 	background-color: #000;
 	color: #FFF;
 }
 
-.default:focus {
-	outline: 2px solid #1E75B1;
-	outline-offset: 2px;
-}	
+
