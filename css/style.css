@@ -56,7 +56,6 @@ button.solid-default {
 button.solid-default:hover {
 	background: var(--color-surface-action-default-hover, #353535);
 	color: var(--color-text-on-action);
-	overflow:none;
 }
 
 button.solid-default:active {
