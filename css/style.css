@@ -31,7 +31,7 @@ button {
 	justify-content: center;
 	align-items: center;
 	gap: 12px;
-	border: hidden;
+	border: 1px solid transparent;
 	border-radius: var(--border-radius-round, 52px);
 	cursor: pointer;
 	white-space: nowrap;
@@ -81,19 +81,27 @@ button.transparent-default:active {
 }
 
 button.outline-default {
-	border: var(--border-width-sm, 1px) solid var(--color-border-primary, #353535);
+	outline: var(--border-width-sm, 1px) solid var(--color-border-primary, #353535);
 	background: var(--color-surface-primary, #FFF);
 	color: var(--color-text-primary, #1B1B1B);
 }
 
 button.outline-default:hover {
-	border: var(--border-width-md, 2px) solid var(--color-border-primary, #353535);
+	outline:var(--border-width-md, 2px) solid var(--color-border-primary, #353535);
 	background: var(--color-surface-primary, #FFF);
 	color: var(--color-text-primary, #1B1B1B);
 }
 
 button.outline-default:active {
+	outline: var(--border-width-sm, 1px) solid var(--color-border-primary, #353535);
+	background: var(--color-surface-primary, #FFF);
+	color: var(--color-text-primary, #1B1B1B);
+}
+
+button.outline-default:focus-visible {
 	border: var(--border-width-sm, 1px) solid var(--color-border-primary, #353535);
+	outline: var(--border-width-md, 2px) solid var(--color-border-focus, #1E75B1);
+	outline-offset: 2px;
 	background: var(--color-surface-primary, #FFF);
 	color: var(--color-text-primary, #1B1B1B);
 }
@@ -129,21 +137,28 @@ button.transparent-primary:active {
 }
 
 button.outline-primary {
-	border: var(--border-width-sm, 1px) solid var(--color-border-action, #1E75B1);
+	outline: var(--border-width-sm, 1px) solid var(--color-border-action, #353535);
 	background: var(--color-surface-primary, #FFF);
 	color: var(--color-text-action, #1E75B1);
 }
 
 button.outline-primary:hover {
-	border: var(--border-width-md, 2px) solid var(--color-border-action, #353535);
+	outline: var(--border-width-md, 2px) solid var(--color-border-action, #353535);
 	background: var(--color-surface-primary, #FFF);
 	color: var(--color-text-action, #1E75B1);
 
 }
 
 button.outline-primary:active {
-	border: var(--border-width-sm, 1px) solid var(--color-border-action, #1E75B1);
+	outline: var(--border-width-sm, 1px) solid var(--color-border-action, #353535);
 	background: var(--color-surface-primary, #FFF);
 	color: var(--color-text-action, #1E75B1);
 }
 
+button.outline-primary:focus-visible {
+	border: var(--border-width-sm, 1px) solid var(--color-border-action, #353535);
+	outline: var(--border-width-md, 2px) solid var(--color-border-focus, #1E75B1);
+	outline-offset: 2px;
+	background: var(--color-surface-primary, #FFF);
+	color: var(--color-text-action, #1E75B1);
+}
