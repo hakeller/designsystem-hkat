@@ -11,7 +11,7 @@ p {
 }
 
 div {
-	display: flex;
+	display: inline-flex;
 	margin-bottom: 80px;
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -30,85 +30,119 @@ button {
 	align-items: center;
 	gap: 12px;
 	border: hidden;
-	border-radius: 52px;
+	border-radius: var(--border-radius-round, 52px);
 	cursor: pointer;
+	white-space: nowrap;
 	
 }
 
-
 button:focus-visible {
-	outline: 2px solid #1E75B1;
+	outline: var(--border-width-md, 2px) solid var(--color-border-focus, #1E75B1);
 	outline-offset: 2px;
 }	
 
 button:disabled {
-	background-color: #F0F0F0;
-	color: #6B6B6B;
-	border: solid, 1px, #B5B5B5;
+	border: var(--border-width-sm, 1px) solid var(--color-border-disabled, #B5B5B5);
+	background: var(--color-surface-disabled, #F0F0F0);
+	color: var(--color-text-on-disabled, #6B6B6B);
 	cursor: not-allowed;
 }
 
-button.solid-default {
-	background-color: #000;
-	color: #FFF;
+button.solid-default { 
+	background: var(--color-surface-action-default);
+	color: var(--color-text-on-action);
 }
 
 button.solid-default:hover {
-	background-color: #353535;
-	color: #FFF;
+	background: var(--color-surface-action-default-hover, #353535);
+	color: var(--color-text-on-action);
+	overflow:none;
 }
 
 button.solid-default:active {
-	background-color: #000;
-	color: #FFF;
+	background: var(--color-surface-action-default);
+	color: var(--color-text-on-action);
 }
 
 button.transparent-default {
-	background-color: transparent;
-	color: #1B1B1B;
+	background: transparent;
+	color: var(--color-text-primary, #1B1B1B);
 }
 
 button.transparent-default:hover {
-	background-color: #F0F0F0;
-	color: #1B1B1B;
+	background: var(--color-surface-secondary, #F0F0F0);
+	color: var(--color-text-primary, #1B1B1B);
 }
 
 button.transparent-default:active {
-	background-color: transparent;
-	color: #1B1B1B;
+	background: transparent;
+	color: var(--color-text-primary, #1B1B1B);
 }
 
 button.outline-default {
-	background-color: #FFF;
-	outline: 1px solid #000;
-	color: #000;
+	border: var(--border-width-sm, 1px) solid var(--color-border-primary, #353535);
+	background: var(--color-surface-primary, #FFF);
+	color: var(--color-text-primary, #1B1B1B);
 }
 
 button.outline-default:hover {
-	background-color: #FFF;
-	outline: 2px solid #000;
-	color: #000;
+	border: var(--border-width-md, 2px) solid var(--color-border-primary, #353535);
+	background: var(--color-surface-primary, #FFF);
+	color: var(--color-text-primary, #1B1B1B);
 }
 
 button.outline-default:active {
-	background-color: #FFF;
-	outline: 1px solid #000;
-	color: #000;
+	border: var(--border-width-sm, 1px) solid var(--color-border-primary, #353535);
+	background: var(--color-surface-primary, #FFF);
+	color: var(--color-text-primary, #1B1B1B);
 }
 
-button.primary-solid {
-	background-color: #1E75B1;
-	color: #FFF;
+button.solid-primary {
+	background: var(--color-surface-action-primary, #1E75B1);
+	color: var(--color-text-on-action, #FFF);
 }
 
-button.primary-solid:hover {
+button.solid-primary:hover {
 	background-color: #185E8E;
-	color: #FFF;
+	color: var(--color-text-on-action, #FFF);
 }
 
-button.primary-solid:active {
-	background-color: #1E75B1;
-	color: #FFF;
+button.solid-primary:active {
+	background: var(--color-surface-action-primary, #1E75B1);
+	color: var(--color-text-on-action, #FFF);
 }
 
+button.transparent-primary {
+	background: transparent;
+	color: var(--color-text-action, #1E75B1);
+}
+
+button.transparent-primary:hover {
+	background: var(--color-surface-action-subtle, #E8EEF4);
+	color: var(--color-text-action, #1E75B1);
+}
+
+button.transparent-primary:active {
+	background: transparent;
+	color: var(--color-text-action, #1E75B1);
+}
+
+button.outline-primary {
+	border: var(--border-width-sm, 1px) solid var(--color-border-action, #1E75B1);
+	background: var(--color-surface-primary, #FFF);
+	color: var(--color-text-action, #1E75B1);
+}
+
+button.outline-primary:hover {
+	border: var(--border-width-md, 2px) solid var(--color-border-action, #353535);
+	background: var(--color-surface-primary, #FFF);
+	color: var(--color-text-action, #1E75B1);
+
+}
+
+button.outline-primary:active {
+	border: var(--border-width-sm, 1px) solid var(--color-border-action, #1E75B1);
+	background: var(--color-surface-primary, #FFF);
+	color: var(--color-text-action, #1E75B1);
+}
 
